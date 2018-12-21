@@ -1,6 +1,6 @@
 # Kubernetes (k8s) Deployment Controller
 
-The website in this repo will be automatically deployed with its updates in a VM instance hosted on Google Cloud Platform, while the updates are pushed from a local machine.
+This repository demonstrates the auto-deployment of a website with updates in a Kubernetes Engine hosted on Google Cloud Platform. 
 
 ## How it works
 ![](assets/README-9132d42c.png)
