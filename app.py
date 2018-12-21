@@ -27,7 +27,7 @@ def create_deployment():
 
 
 # auto update deployment
-@app.route('/patch_deployment', methods=['GET', 'POST']) ## pull updates from github and call for deployment
+@app.route('/patch_deployment', methods=['GET', 'POST']) ##  call for deployment
 def patch_deployment():
     return Response(json.dumps(Deployments().patch()), mimetype="application/json")
 
