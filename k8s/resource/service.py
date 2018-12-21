@@ -2,7 +2,7 @@ from constant import NAMESPACE, DEPLOYMENT_JSON
 from k8s.base.base_resource import BaseResource
 from k8s.exception.k8s_exception import K8sException
 
-
+## write the CLASS for creating Service
 class Services(BaseResource):
     def __init__(self):
         BaseResource.__init__(self)

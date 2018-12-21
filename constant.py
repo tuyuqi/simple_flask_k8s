@@ -1,5 +1,6 @@
-API_SERVER = "https://104.198.196.137"
+API_SERVER = "https://104.198.196.137" ##api of k8s
 
+## define the enpoint for namesapce, services, deployments, and deployments_patch shown on the app.py
 RESOURCES_ENDPOINT_INFO = {
     "namespace": {
         "is_core": True,
@@ -28,10 +29,10 @@ RESOURCES_ENDPOINT_INFO = {
 
 }
 
-# app namespace
+# app namespace on k8s
 NAMESPACE = "flask-app-ns"
 
-# deployment template
+# define deployment template
 DEPLOYMENT_JSON = {
     "apiVersion": "apps/v1beta1",
     "kind": "Deployment",
@@ -68,7 +69,7 @@ DEPLOYMENT_JSON = {
     }
 }
 
-# Service Template
+# define Service Template
 SERVICE_JSON = {
     "apiVersion": "v1",
     "kind": "Service",

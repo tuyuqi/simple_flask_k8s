@@ -1,3 +1,5 @@
+## ## write the CLASS for checking the information of k8s deployment
+
 class K8sException(Exception):
     _reason = ""
     _status = ""

@@ -1,0 +1,7 @@
+graph TB
+    A(Local Machine: <br> modified website) -- push updated code <br> to Github --> B
+    B(Github Webhook: <br> received pushed notification ) -- send action:POST <br> to k8s --> C
+    C(k8s: <br> 1. pull updates from github <br> 2.build image and push to Dockerhub) --> D
+    D(Dockerhub: <br> 1. Webhook trigger <br> 2. call k8s to patch API) --> E
+    E(k8s: <br> 1. deploy new image <br> 2. deploy the WebSite with updates) --> F
+    F(WebSite Updated.)

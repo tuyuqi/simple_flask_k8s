@@ -3,6 +3,7 @@ from k8s.base.base_resource import BaseResource
 from k8s.exception.k8s_exception import K8sException
 import datetime
 
+## write the CLASS for performing deployments
 
 class Deployments(BaseResource):
     def __init__(self):
